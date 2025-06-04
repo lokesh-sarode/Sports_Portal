@@ -1,0 +1,81 @@
+/* Import a modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background: url('/static/assets/img/reciept_background.jpg') no-repeat center center fixed; */
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Success alert style */
+.alert-success {
+    margin-top: 20px;
+    /* max-width: 600px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons styling */
+.btn-primary {
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Ticket card styling */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    color: black;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 8px 0;
+    font-weight: 500;
+    text-align: justify;
+}
+
+/* Print button styling */
+.card button {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: none !important;
+    }
+
+    .btn,
+    .alert,
+    a {
+        display: none !important;
+    }
+
+    .card {
+        background: #fff !important;
+        color: #000 !important;
+        box-shadow: none !important;
+    }
+
+    .card h2 {
+        color: #000 !important;
+    }
+}

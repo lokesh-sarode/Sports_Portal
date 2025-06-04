@@ -10,7 +10,7 @@
         {% for sub_event in main_event.sub_events.all %}
         <!-- Card 1 -->
         <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card bg-gradient-info event-card">
+            <div class="card event-card">
                 <div class="card-body">
                     <h5 class="card-title text-uppercase">{{ sub_event.name }}</h5>
                     <p class="text-black">
@@ -26,6 +26,8 @@
         </div>
         {% endfor %}
     </div>
-    <a href="{% url 'main_event_list' %}" class="btn btn-outline-primary">Back to Main Events</a>
+    <div>
+        <a href="{% url 'main_event_list' %}" class="btn btn-outline-primary">Back to Main Events</a>
+    </div>
 
     {% endblock body %}

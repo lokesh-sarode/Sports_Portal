@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function (){
             const full_name = document.getElementById("id_full_name")?.value.trim();
             const email = document.getElementById("id_email")?.value.trim();
             const college_name = document.getElementById("id_college_name")?.value.trim();
+            const dept = document.getElementById("id_dept")?.value.trim();
             const year_of_study = document.getElementById("id_year_of_study")?.value.trim();
             const contact_number = document.getElementById("id_contact_number")?.value.trim();
             const emergency_contact = document.getElementById("id_emergency_contact")?.value.trim();
@@ -17,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function (){
             const sub_event = payButton.getAttribute("data-sub-event"); 
         console.log(sub_event)
              // Validate inputs
-            if (!full_name || !email || !college_name || !year_of_study || !contact_number || !emergency_contact) {
+            if (!full_name || !email || !college_name || !dept || !year_of_study || !contact_number || !emergency_contact) {
                 alert("Please fill out all fields.");
                 return;
             }
@@ -63,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function (){
                             name: full_name,
                             email: email,
                             college_name: college_name,
+                            dept: dept,
                             year_of_study: year_of_study,
                             contact_number: contact_number,
                             emergency_contact: emergency_contact,
@@ -106,21 +108,3 @@ document.addEventListener("DOMContentLoaded", function (){
     }
         
 })
-
-
-
-// handler: function(response){
-                    //     const registerDetails = {
-                        //         name: full_name,
-                        //         email: email,
-                        //         college_name: college_name,
-                        //         year_of_study: year_of_study,
-                        //         contact_number: contact_number,
-                        //         emergency_contact:emergency_contact,
-                        //         sub_event:sub_event
-                        //     }
-                        //     const querParams = new URLSearchParams(registerDetails).toString();
-                        //     window.location.href = `/Registration/success?${querParams}`
-                        //     document.querySelector(".form-items").submit();
-                        
-                        // },

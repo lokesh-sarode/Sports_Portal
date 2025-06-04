@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Privacy Policy & Terms{% endblock %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/privacy_and_terms.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="container py-5">
+    <h1 class="text-center text-primary mb-4">Privacy Policy & Terms of Use</h1>
+
+    <section class="mb-5">
+        <h2>📌 Privacy Policy</h2>
+        <p>Your privacy is important to us. This system is developed for managing sports and event registrations at our institution. We collect only the necessary information required to register participants and facilitate communication.</p>
+
+        <h5>Information We Collect:</h5>
+        <ul>
+            <li>Full Name</li>
+            <li>Email Address</li>
+            <li>College Name & Department</li>
+            <li>Contact Numbers</li>
+            <li>Emergency Contact</li>
+            <li>Payment Details (Payment ID only)</li>
+        </ul>
+
+        <h5>How We Use Your Data:</h5>
+        <ul>
+            <li>To manage and confirm event registrations</li>
+            <li>To send event-related updates</li>
+            <li>To contact participants for emergencies or event changes</li>
+        </ul>
+
+        <h5>Data Protection:</h5>
+        <p>All data is stored securely and used solely for internal purposes. We do not sell, share, or trade your personal information with third parties.</p>
+    </section>
+
+    <section class="mb-5">
+        <h2>📜 Terms & Conditions</h2>
+        <p>By using this portal, you agree to the following terms:</p>
+
+        <ul>
+            <li>All information submitted must be accurate and truthful.</li>
+            <li>Misuse of the system, including fake registrations, may result in a ban from future events.</li>
+            <li>Event details such as timing, venue, and participation rules are subject to change and will be updated on the platform.</li>
+            <li>Once registered, cancellation or refund policies (if applicable) will be as per the organizing committee’s discretion.</li>
+            <li>All users are expected to behave responsibly and respectfully in all events and activities.</li>
+        </ul>
+
+        <p>If you disagree with any part of this policy or terms, please do not use this platform.</p>
+    </section>
+
+    <div class="text-center">
+        <a href="/" class="btn btn-primary">Back to Home</a>
+    </div>
+</div>
+{% endblock %}

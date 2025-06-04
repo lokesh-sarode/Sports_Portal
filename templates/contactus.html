@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Contact Us{% endblock title %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
+{% endblock head %}
+
+{% block body %}
+<div class="contact-wrapper">
+    <div class="container contact-container">
+        <div class="row align-items-center">
+            <div class="col-md-6 contact-info">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We’d love to hear from you.</p>
+                <ul class="list-unstyled mt-4">
+                    <li><strong>Email:</strong> contact@sportsportal.com</li>
+                    <li><strong>Phone:</strong> +91 79721 41414</li>
+                    <li><strong>Address:</strong> Genba Sopanrao Moze College of Engineering, Balewadi, Pune</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your full name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100" id="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static "js/contactus.js" %}"></script>
+{% endblock body %}

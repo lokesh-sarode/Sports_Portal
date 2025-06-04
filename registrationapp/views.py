@@ -7,7 +7,7 @@ from django.shortcuts import get_object_or_404, render, redirect
 from django.urls import reverse
 from django.views import View
 from django.views.generic import ListView
-from .models import Participant, Registration, TeamRegistration
+from .models import Participant, TeamRegistration
 from events.models import SubEvent
 from .forms import RegistrationForm, TeamRegistrationForm, PlayerFormSet  # Ensure this form exists
 
@@ -45,11 +45,11 @@ def success_page(request):
         try:
             print("🔹 Received POST request:", request.body)  
             data = json.loads(request.body)
-            # payment_id = request.GET.get("payment_id")
             payment_id = data.get("razorpay_payment_id")
             full_name = data.get("name")
             email = data.get("email")
             college_name = data.get("college_name")
+            dept = data.get("dept")
             year_of_study = data.get("year_of_study")
             contact_number = data.get("contact_number")
             emergency_contact = data.get("emergency_contact")
@@ -70,6 +70,7 @@ def success_page(request):
                 full_name=full_name,
                 email=email,
                 college_name=college_name,
+                dept = dept,
                 year_of_study=year_of_study,
                 contact_number=contact_number,
                 emergency_contact=emergency_contact,
@@ -104,7 +105,7 @@ def download_participants_excel(request):
     sheet.title = "Participants"
 
     # Define column headers
-    headers = ["Name", "College Name", "Year of Study", "Contact", "Emergency Contact"]
+    headers = ["Name", "College Name", "Dept", "Year of Study", "Contact", "Emergency Contact"]
     sheet.append(headers)  # Add headers to the first row
 
     # Fetch participant data and write to Excel rows
@@ -113,6 +114,7 @@ def download_participants_excel(request):
         sheet.append([
             participant.full_name,
             participant.college_name,
+            participant.dept,
             participant.year_of_study,
             participant.contact_number,
             participant.emergency_contact

@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}{{ sub_event.name }}{% endblock %}
 {% block head %}
-<link rel="stylesheet" href="{% static "css/sub-event.css" %}">
+<link rel="stylesheet" href="{% static "css/sub_event.css" %}">
 {% endblock head %}
 {% block body %}
 <div class="container py-5">
@@ -15,7 +15,7 @@
             <p class="event-detail"><strong>Time:</strong> {{ sub_event.time }}</p>
             <p class="event-detail"><strong>Venue:</strong> {{ sub_event.venue }}</p>
             <p class="event-detail"><strong>Entry Fee:</strong> {{ sub_event.fees }}</p>
-            <p class="event-detail"><strong>Description:</strong> {{ sub_event.description }}</p>
+            <p class="event-detail card-text"><strong>Description:</strong> {{ sub_event.description }}</p>
         </div>
         <p class="mt-3 mb-0 text-lg btn btn-primary">
             <a href="{% url 'participant_register' sub_event.id %}" class="text-black font-weight-bold" style="text-decoration: none">Register</a>

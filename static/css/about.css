@@ -1,0 +1,19 @@
+.about-hero {
+    background: linear-gradient(rgba(5, 55, 129, 0.7), rgba(0, 0, 50, 0.7)), url('../assets/img/about_hero.avif') no-repeat center center/cover;
+    padding: 100px 0;
+    color: white;
+}
+
+.about-content h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-footer {
+    font-size: 14px;
+}

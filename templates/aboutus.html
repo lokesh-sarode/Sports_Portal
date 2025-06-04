@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block body %}
+<section class="about-hero">
+    <div class="container text-center">
+        <h1 class="display-4 text-white">About Us</h1>
+        <p class="lead text-white-50">Empowering Events, Uniting Students</p>
+    </div>
+</section>
+
+<section class="about-content py-5">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/about_team.webp' %}" alt="Our Team" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2>Who We Are</h2>
+                <p>We are a group of passionate developers and organizers from Genba Sopanrao Moze College of Engineering dedicated to simplifying and enriching sports and event experiences on campus. Our system bridges the gap between participants, organizers, and events with seamless online management and registration.</p>
+            </div>
+        </div>
+        <div class="row align-items-center flex-md-row-reverse">
+            <div class="col-md-6">
+                <img src="{% static 'assets/img/about_sport_event.avif' %}" alt="Sports Event" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <h2>What We Do</h2>
+                <p>From organizing college-level tournaments to managing technical and cultural fests, our platform handles event registration, participant management, scheduling, and real-time updates — all under one roof. Whether it's cricket or coding, we bring every event to life.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-footer py-4 bg-dark text-white text-center">
+    <div class="container">
+        <p>Developed with 💙 by Team GSMCOE | Sports and Events Management System</p>
+    </div>
+</section>
+{% endblock %}

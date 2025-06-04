@@ -1,0 +1,23 @@
+.container {
+    max-width: 900px;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.btn {
+    margin-top: 20px;
+}

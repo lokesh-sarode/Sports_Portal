@@ -12,7 +12,7 @@ class RegistrationForm(forms.ModelForm):
     
     class Meta:
         model = Participant
-        fields = ['full_name', 'email', 'college_name', 'year_of_study', 'contact_number', 'emergency_contact', 'sub_event']
+        fields = ['full_name', 'email', 'college_name', 'dept', 'year_of_study', 'contact_number', 'emergency_contact', 'sub_event']
 
     def clean(self):
         cleaned_data = super().clean()
