@@ -57,10 +57,9 @@ Now, It's all done...Now you can run the project by:
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://website.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sarode-lokesh)
+[![linkedin](https://content.linkedin.com/content/dam/me/business/en-us/amp/xbu/linkedin-revised-brand-guidelines/linkedin-logo/fg/brandg-linkedinlogo-hero-logo-dsk-v01.png.original.png)](https://www.linkedin.com/in/sarode-lokesh)
 [![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/darkvenomls)
 
 ## Support
-
-For support, email abc@abc.com or join our Slack channel.
+For any query please connect through linkedin
 
