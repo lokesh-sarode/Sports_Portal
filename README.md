@@ -19,7 +19,7 @@ SportsPortal is a web-based platform for managing sports events. Built with HTML
 
 ## Authors
 
-- [@DarkVenomLS](https://www.github.com/DarkVenomLS)
+- [@lokesh-sarode](https://www.github.com/lokesh-sarode)
 - [@Ashwinsantapure](https://www.github.com/Ashwinsantapure)
 - [@Mr-Gaikwad](https://www.github.com/Mr-Gaikwad)
 
