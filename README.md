@@ -57,15 +57,15 @@ Now, It's all done...Now you can run the project by:
 
 ## 🔗 Links
 <a href="https://lokesh-sarode.netlify.app/" >
-<img src="portfolio-logo.png" width="150px" alt="portfolio">
+<img src="https://github.com/lokesh-sarode/portfolio/blob/main/portfolio-logo.png" width="110px" alt="portfolio">
 </a>
 
 <a href="https://www.linkedin.com/in/sarode-lokesh" >
-<img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/xbu/linkedin-revised-brand-guidelines/linkedin-logo/fg/brandg-linkedinlogo-hero-logo-dsk-v01.png.original.png" width="150px" alt="LinkedIn">
+<img src="https://content.linkedin.com/content/dam/me/business/en-us/amp/xbu/linkedin-revised-brand-guidelines/linkedin-logo/fg/brandg-linkedinlogo-hero-logo-dsk-v01.png.original.png" width="110px" alt="LinkedIn">
 </a>
 
 <a href="https://x.com/darkvenomls" >
-<img src="https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="150px" alt="X">
+<img src="https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" width="110px" alt="X">
 </a>
 
 
