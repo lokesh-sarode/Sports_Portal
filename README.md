@@ -1,9 +1,9 @@
-### Website Link:
-🔗 https://sports-portal-7g1d.onrender.com/
 # Sports_Portal
 - "Empowering event management through smart digital solutions."
 - This project is about the sports portal which includes all the neccessary functionalities which reduce the overload on the event organizers and provides an efficient way to organize the sports.
 
+### Website Link:
+🔗 https://sports-portal-7g1d.onrender.com/
 <!-- ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png) -->
 ![Logo](/static/web-back.png)
 
